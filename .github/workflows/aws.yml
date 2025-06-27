@@ -11,9 +11,9 @@ jobs:
 
     - name: Download ngrok
       run: |
-        Invoke-WebRequest https://github.com/Warlrd6/ngrok-rdp-1/blob/d06afe861f421b01d563a9da4ad512d869ee382a/resources/ngrok.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://github.com/Warlrd6/ngrok-rdp-1/blob/d06afe861f421b01d563a9da4ad512d869ee382a/resources/start.bat -OutFile start.bat
-        Invoke-WebRequest https://github.com/Warlrd6/ngrok-rdp-1/blob/d06afe861f421b01d563a9da4ad512d869ee382a/resources/winrar.exe -OutFile winrar.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/Warlrd6/ngrok-rdp-1/d06afe861f421b01d563a9da4ad512d869ee382a/resources/ngrok.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/Warlrd6/ngrok-rdp-1/d06afe861f421b01d563a9da4ad512d869ee382a/resources/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Warlrd6/ngrok-rdp-1/d06afe861f421b01d563a9da4ad512d869ee382a/resources/winrar.exe -OutFile winrar.exe
 
     - name: Extract ngrok Files
       run: Expand-Archive ngrok.zip
